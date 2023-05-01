@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4fc;
+}
+
+header img {
+    position: absolute;
+    height: 40px;
+    top: 5px;
+    left: 10px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.contenedorCajaTexto {
+    display: flex;
+    padding: 1em;
+}
+
+.cajaTexto {
+    width: 100%;
+    height: 300px;
+    border: none;
+    background-color: #f4f4fc;
+    font-size: 2em;
+    color: #0A3871;
+}
+
+.cajaTexto::placeholder {
+    color: #0A3871;
+}
+
+.cajaTexto:focus {
+    outline: none;
+}
+
+.alerta {
+    display: flex;
+    padding: 0 2em;
+    color: #495057;
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+#idEncriptar {
+    width: 40%;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+#idEncriptar img {
+    width: 1em;
+}
+
+#idEncriptar:hover {
+    background-color: #0e4e9d;
+    transform: scale(1.1);
+}
+
+#idEncriptar:active {
+    background: #041121;
+    transform: scale(0.9);
+}
+
+
+#idDesencriptar {
+    width: 40%;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    background-color: #fff;
+    color: #0A3871;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #0A3871;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+#idDesencriptar img {
+    width: 1em;
+}
+
+#idDesencriptar:hover {
+    background-color: #eee;
+    transform: scale(1.1);
+}
+
+#idDesencriptar:active {
+    background: #041121;
+    color: #fff;
+    transform: scale(0.9);
+}
+
+
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1em;
+    padding: 1em;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, .5);
+}
+
+.contenedorMunhieco {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorMunhieco img {
+    width: 100%;
+    margin-top: 3em;
+}
+
+.contenedorParrafo h3 {
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+    color: #343A40;
+    margin-bottom: 1em;
+}
+
+.contenedorParrafo p {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: #495057;
+    margin-bottom: 2em;
+}
+
+.contenedorResultado {
+    display: none;
+    padding: 1em;
+}
+
+.textoResultado {
+    width: 100%;
+    height: 290px;
+    font-size: 1.5em;
+    color: #343A40;
+    border: none;
+}
+
+.textoResultado:focus {
+    outline: none;
+}
+
+.contenedorCopiar {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.ocultar {
+    display: none;
+}
+
+#idCopiar {
+    width: 80%;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    background-color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+#idCopiar img {
+    width: 1em;
+}
+
+#idCopiar:hover {
+    background-color: #eee;
+    transform: scale(1.1);
+}
+
+#idCopiar:active {
+    background: #041121;
+    color: #fff;
+    transform: scale(0.9);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4f4fc;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #0A3871;
+}
+
+.footer-content h2 {
+    font-size: 3em;
+}
+
+.footer-content h5 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    width: 50%;
+}
+
+.social-networks i {
+    font-size: 2em;
+    text-decoration: none;
+    color: #f4f4fc;
+}
+
+.social-networks i:hover {
+    border-radius: 100%;
+    transform: scale(1.2);
+    transition: 0.4s all;
+}
+
+.social-networks i:active {
+    transform: scale(0.8);
+}
+
+@media (max-width: 760px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header img {
+        position: relative;
+        float: left;
+    }
+
+    .seccion1 {
+        width: auto;
+    }
+
+    .seccion2 {
+        width: auto;
+    }
+
+    .contenedorMunhieco {
+        display: none;
+    }
+
+    .textoResultado {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .contenedorBotones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    #idEncriptar {
+        width: 80%;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+
+    #idDesencriptar {
+        width: 80%;
+    }
+}
